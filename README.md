@@ -36,3 +36,8 @@ The maximum score is 100 points! After that, you
 The empty row can be removed, but it makes it very unlikely that you survive the level. 
 Every row is randomly generated, but there is always 1 escape hole.
 When there is no empty row between 2 falling pixels, it could happen that there is no way to get to the escape hole of the next row.
+
+## Next step
+Whats next:
+- The code is a bit messy and could use a rewrite.
+- Code could be written in less code.

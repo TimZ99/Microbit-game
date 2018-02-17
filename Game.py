@@ -57,6 +57,7 @@ def start():
     resetVars()
     display.scroll("3 2 1")
     vars.stopped = False
+    display.set_pixel(0, 4, 9)
 
 
 def stop(message, failed):
@@ -109,7 +110,7 @@ def setLevel():
 
 
 # move all the obstacles one pixel down and create new row on top
-def moveOneDown():
+def moveObstaclesDown():
     # get currect status of pixels
     for y in range(0, 4):
         for x in range(0, 5):
@@ -206,7 +207,7 @@ while True:
     elif checkForFail(vars.player_x):
         stop("Game over!", True)
     elif checkRowTime():
-        moveOneDown()
+        moveObstaclesDown()
     elif vars.player_x != vars.player_x_old:
         # move users pixel
         display.set_pixel(vars.player_x_old, 4, 0)

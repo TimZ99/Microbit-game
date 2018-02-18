@@ -1,7 +1,7 @@
 # Microbit-game
 Dodge the obstacles, a game made for the Micro:Bit. 
 
-The display failing and all the pixels are falling down. You, a pixel on the bottom, have survived your fall. 
+The display is failing and all the pixels are falling down. Only you, a pixel on the bottom, have survived your fall.
 Sadly the other pixels are still falling and you need to dodge them to stay alive. 
 Go left or right and try to stay alive until the last pixels has fallen! 
 
@@ -31,9 +31,9 @@ There are 5 levels.
   - Speed: 200ms
   - Empty row between falling pixels
   
-The maximum score is 100 points! After that, you 
+The maximum score is 100 points. When you reached this score you have survived failure of the display!
   
-The empty row can be removed, but it makes it very unlikely that you survive the level. 
+The empty row between the falling pixels can be removed, but it makes it very unlikely that you survive the level.
 Every row is randomly generated, but there is always 1 escape hole.
 When there is no empty row between 2 falling pixels, it could happen that there is no way to get to the escape hole of the next row.
 
@@ -41,3 +41,5 @@ When there is no empty row between 2 falling pixels, it could happen that there 
 Whats next:
 - The code is a bit messy and could use a rewrite.
 - Code could be written in less code.
+
+View dev branch if your curious for the next step.
